@@ -43,6 +43,8 @@ namespace re_jos1.api.vs1
 
             app.UseRouting();
 
+            app.UseStaticFiles();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
