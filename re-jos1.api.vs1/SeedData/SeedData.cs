@@ -63,9 +63,10 @@ namespace re_jos1.api.vs1.SeedData
                     {
                         Name = "Äpplejos",
                         CategoryId = 1,
-                        Description = "Jos från räddade äpplen.",
+                        Description = "Jos från räddade äpplen.",                        
                         Image = "apple.jpg",
-                        Price = 25
+                        Price = 25,
+                        VolumeInMl = 330
                     },
                     new Product
                     {
@@ -73,7 +74,8 @@ namespace re_jos1.api.vs1.SeedData
                         CategoryId = 1,
                         Description = "Jos från räddade kiwis.",
                         Image = "kiwi.jpg",
-                        Price = 25
+                        Price = 25,
+                        VolumeInMl = 330
                     },
                     new Product
                     {
@@ -81,7 +83,8 @@ namespace re_jos1.api.vs1.SeedData
                         CategoryId = 2,
                         Description = "Smoothie av räddade bananer och avokados.",
                         Image = "avocado.jpg",
-                        Price = 25
+                        Price = 25,
+                        VolumeInMl = 250
                     },
                     new Product
                     {
@@ -89,7 +92,8 @@ namespace re_jos1.api.vs1.SeedData
                         CategoryId = 2,
                         Description = "Smoothie av räddade apelsiner och bananer.",
                         Image = "orange.jpg",
-                        Price = 25
+                        Price = 25,
+                        VolumeInMl = 250
                     }
                 );
 
