@@ -23,7 +23,7 @@ namespace re_jos1.api.vs1.SeedData
                     {
                         Name = "Home",
                         Slug = "home",
-                        Content = "Hemsida"
+                        Content = "Hem"
                     },
                     new Page
                     {
