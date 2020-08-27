@@ -9,18 +9,18 @@ namespace re_jos1.api.vs1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PagesController : ControllerBase
+    public class OrdersController : ControllerBase
     {
         private readonly ApiContext context;
 
-        public PagesController(ApiContext context)
+        public OrdersController(ApiContext context)
         {
             this.context = context;
         }
 
-        public async Task<ActionResult<IEnumerable<Page>>> Get()
+        public async Task<ActionResult<IEnumerable<Order>>> Get()
         {
-            return await context.Pages.OrderBy(x => x.Id).ToListAsync();
+            return await context.Orders.OrderBy(x => x.Id).ToListAsync();
         }
     }
 }
