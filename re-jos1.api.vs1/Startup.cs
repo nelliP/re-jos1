@@ -29,6 +29,7 @@ namespace re_jos1.api.vs1
         {
             services.AddControllers();
             services.AddDbContext<ApiContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ApiContext")));
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +39,12 @@ namespace re_jos1.api.vs1
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(options => options
+                .WithOrigins("http://localhost:8080")
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+            );
 
             app.UseHttpsRedirection();
 
