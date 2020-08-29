@@ -18,6 +18,8 @@ namespace re_jos1.api.vs1.Controllers
             this.context = context;
         }
 
+        // GET /api/orders
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Order>>> Get()
         {
             return await context.Orders.OrderBy(x => x.Id).ToListAsync();
